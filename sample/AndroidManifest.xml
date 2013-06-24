@@ -5,7 +5,7 @@
     android:versionName="2.4.1">
 
     <uses-sdk
-        android:minSdkVersion="4"
+        android:minSdkVersion="11"
         android:targetSdkVersion="16" />
 
     <application
@@ -288,6 +288,25 @@
                 android:name=".SampleUnderlinesStyledTheme"
                 android:label="Underlines/Styled (via theme)"
                 android:theme="@style/StyledIndicators">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.jakewharton.android.viewpagerindicator.sample.SAMPLE" />
+            </intent-filter>
+        </activity>
+
+        <!-- ACTIONBAR INDICATOR-->
+        <activity
+            android:name=".SampleTitlesWithListenerInActionBar"
+            android:label="Action Bar/With Listener">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="com.jakewharton.android.viewpagerindicator.sample.SAMPLE" />
+            </intent-filter>
+        </activity>
+        <!-- ICON INDICATOR -->
+        <activity
+            android:name=".CustomViewsInActionBar"
+            android:label="Action Bar/Spinner">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="com.jakewharton.android.viewpagerindicator.sample.SAMPLE" />
